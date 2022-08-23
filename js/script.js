@@ -26,4 +26,12 @@ $(document).ready(function(){
     window.location = linkLocation;
     };
 
+    $(".tab_bbookk").click(function(){
+        $("#quickview").fadeOut();
+    });
+    $(".tab_eatrip").click(function(){
+        $("#quickview").fadeIn();
+    });
+
+
 });

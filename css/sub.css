@@ -6,10 +6,19 @@ body{margin:0;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-
     font-weight: 700;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
 html { scroll-behavior:smooth; }
 li { list-style: none;}
 
-body{background: url(../img/bg.gif);}
+body{background: url(../img/bg.gif); position: relative;}
 
 header{position: fixed; left: 0; top: 0; width: 100%; height: 10vh; z-index: 999; background: url(../img/bg.gif); }
 header p{margin-left: 10px;}
@@ -24,10 +33,11 @@ header p{margin-left: 10px;}
 .inner img{height: 90vh;}
 .inner{position: absolute; left: 50%; top: 10vh; transform: translateX(-50%); z-index: 99;}
 
-.page_go{text-align: center; padding: 20px 0;}
-.page_go>a{color: #fff; font-family: 'PyeongChangPeace-Bold'; font-size: 3rem;}
-.page_go>a:hover{color: #53564B;} /*캐스퍼 색상*/
-.page_go_bb>a:hover{color: #C6A2EB;} /*북북 색상*/
+
+#quickview {position: fixed; right: 10%; top: 20vh; z-index: 99999; text-align: center;}
+#quickview img{width: 70%;}
+#quickview a{display: block; margin-bottom: 30px; width: 100px; height: 100px; line-height: 100px; padding: 22px 10px; border-radius: 50%; background: #76E91B; box-shadow: 0 0 6px #76E91B; font-family: 'PyeongChangPeace-Light'; font-size: 1.2rem;}
+#quickview a:hover{background-color: #000; color: #76E91B; font-weight: 700;}
 
 /*공통레이아웃 반응형 적용*/
 @media screen and (max-width:1420px) {
