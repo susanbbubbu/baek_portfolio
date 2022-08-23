@@ -34,10 +34,10 @@ header p{margin-left: 10px;}
 .inner{position: absolute; left: 50%; top: 10vh; transform: translateX(-50%); z-index: 99;}
 
 
-#quickview {position: fixed; right: 10%; top: 20vh; z-index: 99999; text-align: center;}
+#quickview {position: fixed; right: 8%; bottom: 10vh; z-index: 99999; text-align: center;}
 #quickview img{width: 70%;}
-#quickview a{display: block; margin-bottom: 30px; width: 100px; height: 100px; line-height: 100px; padding: 22px 10px; border-radius: 50%; background: #76E91B; box-shadow: 0 0 6px #76E91B; font-family: 'PyeongChangPeace-Light'; font-size: 1.2rem;}
-#quickview a:hover{background-color: #000; color: #76E91B; font-weight: 700;}
+#quickview a{display: block; margin-bottom: 30px; width: 100px; height: 100px; line-height: 100px; padding: 22px 10px; border-radius: 50%; background: #76E91B; box-shadow: 0 0 6px #76E91B; }
+#quickview a:hover{background-color: #000; color: #76E91B;}
 
 /*공통레이아웃 반응형 적용*/
 @media screen and (max-width:1420px) {
@@ -53,10 +53,13 @@ header p{margin-left: 10px;}
     .inner{width: 90%;}
     .inner img{height: auto;}
 
+    #quickview a{margin-bottom: 20px; width: 80px; height: 80px; line-height: 80px; padding: 16px 10px;}
 
 }
 
 @media screen and (max-width:741px) {
     .tab li{ padding: 0 4px; margin-right: 0; font-size: 0.8rem; }
+    #quickview img{width: 50%;}
+    #quickview a{margin-bottom: 14px; width: 60px; height: 60px; line-height: 60px; padding: 8px 0;}
 
 }
