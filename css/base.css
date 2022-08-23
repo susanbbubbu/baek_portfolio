@@ -425,6 +425,9 @@ a:focus {
 	.item__content-text {
 		margin-bottom: 0;
 	}
+	.frame__links{
+		display: none;
+	}
 }
 
 @media (any-pointer: fine) {

@@ -46,7 +46,7 @@ header p{margin-left: 10px;}
 
 }
 
-@media screen and (max-width:741px) {
+@media screen and (min-width: 53em) {
     .tab li{ padding: 0 4px; margin-right: 0; font-size: 0.8rem; }
 
 }
